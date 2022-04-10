@@ -1,9 +1,5 @@
 # Automation-Challenge
-> This is a  Selenium Automation framework that automates a UI Test and API Test on a single framework
-
-
-
-
+> This is a  Selenium Java TestNG Maven framework that automates a UI Test and API Test on a single framework. This project uses page object model design principle for easy readability and code maintenance.
 
 
 ## Built With
@@ -38,15 +34,24 @@
 - Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
 - Clone the repository with git clone https://github.com/Nikkydee/Automation-Challenge.git
 - To get the cuurent working tree, git fetch --all, then checkout to Amazon-homepage branch.
-- Finally, Navigate to File menu on Intellij  and open the project from your local.
--
+- Later, Navigate to File menu on Intellij  and open the project from your local.
+- Go to the the testng.xml file on the project menu pane
+- Right-click on the testng.xmlfile and select run sa testng.xml
+
 
 ### Install
 - IDE preferrably Intellij
 - Have a stable internet connection
 
-### Usage
-- For any automation experts 
+### Docker Usage
+>Prequisite
+-Install JDK and Install Maven and set MAVEN_HOME in environmental variable
+-Install docker on your local machine
+-Go to Command Prompt Window on your local
+ 
+- Change Directory to project directory e.g C:\Users\adenike.olapetan\IdeaProjects\Automation-Challenge\Amazon>
+-Run this command docker build -t amazon:latest .
+
 
 
 
@@ -68,10 +73,3 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
-
-## 📝 License
-
-
-This project is [MIT](./MIT.md) licensed.
