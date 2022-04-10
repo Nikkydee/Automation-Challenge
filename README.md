@@ -1,5 +1,5 @@
 # Automation-Challenge
-> This is a  Selenium Automation framework that automates a UI Test and API Test on a single framework
+> This is a  Selenium Java TestNG Maven framework that automates a UI Test and API Test on a single framework. This project uses page object model design principle for easy readability and code maintenance.
 
 
 
