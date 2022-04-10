@@ -1,6 +1,9 @@
 package testcases;
 
 import io.restassured.RestAssured;
+import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -29,4 +32,16 @@ public class RestAssuredTest {
 
         ReusableMethod.rawToJson(response);
 
+
     }
+    @Test
+    public void POJO() {
+
+        RequestSpecification request = RestAssured.given().log().all().header("Content-Type","application/json");
+        request.body(Payload.CreateDynamicUser("admin","admin"));
+        ResponseBody response =request.post("api/users").getBody();
+        JSONSuccessResponse responseBody = response.as(JSONSuccessResponse.class);
+        Assert.assertEquals("admin", responseBody.name);
+        Assert.assertEquals("admin", responseBody.job);
+    }
+}
