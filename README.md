@@ -2,10 +2,6 @@
 > This is a  Selenium Java TestNG Maven framework that automates a UI Test and API Test on a single framework. This project uses page object model design principle for easy readability and code maintenance.
 
 
-
-
-
-
 ## Built With
 - Selenium Webdriver  
 - Java  
@@ -42,6 +38,7 @@
 - Go to the the testng.xml file on the project menu pane
 - Right-click on the testng.xmlfile and select run sa testng.xml
 
+
 ### Install
 - IDE preferrably Intellij
 - Have a stable internet connection
@@ -54,6 +51,7 @@
  
 - Change Directory to project directory e.g C:\Users\adenike.olapetan\IdeaProjects\Automation-Challenge\Amazon>
 -Run this command docker build -t amazon:latest .
+
 
 
 
@@ -75,10 +73,3 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
-
-## 📝 License
-
-
-This project is [MIT](./MIT.md) licensed.
